@@ -10,7 +10,7 @@ base.output = {
   path: config.build.assetsRoot,
   publicPath: config.build.assetsPublicPath,
   filename: 'vue-button.js',
-  library: 'VueButton',
+  library: '<%=ProjectName%>',
   libraryTarget: 'umd'
 }
 

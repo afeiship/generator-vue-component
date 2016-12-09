@@ -41,13 +41,13 @@ module.exports = yeoman.Base.extend({
   },
   _writingCopyFiles: function() {
     this.fs.copy(
-      this.templatePath('{.*,build/*,config/*}'),
+      this.templatePath('{.*,config/*}'),
       this.destinationPath('.')
     );
   },
   _writingTplFiles: function() {
     this.fs.copyTpl(
-      this.templatePath('{*,src/*.js}'),
+      this.templatePath('{*,build/*,src/*.js}'),
       this.destinationPath('.'),
       this.props
     );
