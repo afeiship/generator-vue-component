@@ -1,5 +1,5 @@
 # generator-vue-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Yeoman generator for vue component.
+> Yeoman generator for vue component(vue2.x + yarn + webpack).
 
 ## Installation
 
@@ -14,6 +14,13 @@ Then generate your new project:
 
 ```bash
 yo vue-component
+```
+
+Here are some commands:
+```bash
+yarn install
+yarn dev
+yarn build
 ```
 
 ## Getting To Know Yeoman
