@@ -1,14 +1,15 @@
 <template>
-  <button class="<%=project_name%>" v-on:click="_click()" :type="type">
+  <div  :class="['<%=project_name%>',cssClass]" v-on:click="_click()" :type="type">
     <i>ICON</i>
     <slot></slot>
-  </button>
+  </div>
 </template>
 
 <script>
   export default {
     name: '<%=project_name%>',
     props:{
+      cssClass:String,
       type:{
         type:String,
         default:'<%=project_name%>'
