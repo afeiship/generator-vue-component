@@ -55,7 +55,7 @@ module.exports = yeoman.Base.extend({
   _writingTemplate: function() {
     this.fs.copyTpl(
       this.templatePath('src/components/Template.vue'),
-      this.destinationPath('src/components/' + this.props.ProjectName + '.vue'),
+      this.destinationPath('src/components/' + this.props.project_name + '.vue'),
       this.props
     );
   },

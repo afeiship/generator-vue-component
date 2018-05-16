@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import <%=ProjectName%> from './components/<%=ProjectName%>.vue'
+import <%=ProjectName %> from './components/<%=project_name%>.vue'
 
 Vue.component(<%=ProjectName%>.name, <%=ProjectName%>)
 
