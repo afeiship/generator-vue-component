@@ -1,10 +1,10 @@
-var semver = require('semver')
-var chalk = require('chalk')
-var packageConfig = require('../package.json')
+var semver = require('semver');
+var chalk = require('chalk');
+var packageConfig = require('../package.json');
 var exec = function (cmd) {
   return require('child_process')
     .execSync(cmd).toString().trim()
-}
+};
 
 var versionRequirements = [
   {
@@ -17,7 +17,7 @@ var versionRequirements = [
     currentVersion: exec('npm --version'),
     versionRequirement: packageConfig.engines.npm
   }
-]
+];
 
 module.exports = function () {
   var warnings = []
@@ -42,4 +42,4 @@ module.exports = function () {
     console.log()
     process.exit(1)
   }
-}
+};

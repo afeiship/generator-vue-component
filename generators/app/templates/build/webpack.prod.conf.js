@@ -1,10 +1,10 @@
-const webpack = require('webpack')
-const base = require('./webpack.base.conf')
-const config = require('../config')
+const webpack = require('webpack');
+const base = require('./webpack.base.conf');
+const config = require('../config');
 
 base.entry = {
   lib: './src/main.js'
-}
+};
 
 base.output = {
   path: config.build.assetsRoot,
@@ -12,11 +12,11 @@ base.output = {
   filename: '<%=project_name%>.js',
   library: '<%=ProjectName%>',
   libraryTarget: 'umd'
-}
+};
 
-var webpackConfig = Object.assign({}, base)
+var webpackConfig = Object.assign({}, base);
 
-webpackConfig.devtool = '#source-map'
+webpackConfig.devtool = '#source-map';
 webpackConfig.plugins = (webpackConfig.plugins || []).concat([
   new webpack.DefinePlugin({
     'process.env': {
@@ -27,6 +27,6 @@ webpackConfig.plugins = (webpackConfig.plugins || []).concat([
     compress: { warnings: false }
   }),
   new webpack.optimize.OccurenceOrderPlugin(),
-])
+]);
 
-module.exports = webpackConfig
+module.exports = webpackConfig;
