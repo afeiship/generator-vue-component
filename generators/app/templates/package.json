@@ -1,6 +1,6 @@
 {
   "name": "<%=project_name%>",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "<%=description%>",
   "author": "afeiship <1290657123@qq.com>",
   "keywords": [
